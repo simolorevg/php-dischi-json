@@ -18,6 +18,7 @@
     <div id='app'>
         <h1>From Disco to Disco</h1>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
