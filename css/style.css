@@ -4,3 +4,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*COMMON*/
+body {
+    background-color: #1d2d3c;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+/*LAYOUT*/
+.my-header {
+    background-color: #06131f;
+    width: 100%;
+    color: white;
+}
+
+.my-card {
+    background-color: #112030;
+    padding: 10px;
+    color: white;
+}
+
+.img-content {
+    height: 50%;
+    width: 100%;
+}

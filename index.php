@@ -18,12 +18,25 @@
 
 <body>
     <div id='app'>
+        <div class="my-header d-flex justify-content-center">
+            <h1>From Disco to Disco</h1>
+        </div>
         <div class="container d-flex flex-column justify-content-center align-items-center">
-            <div class="my-header">
-                <h1>From Disco to Disco</h1>
-            </div>
-            <div>
-
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="row row-cols-3">
+                    <div class="col g-3" v-for="(data,index) in disks" :key="index">
+                        <div class="my-card">
+                            <div class="img-content">
+                                <img :src='data.poster' class="card-img-top" alt="">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h2>{{data.title}}</h2>
+                                <p>{{data.author}}</p>
+                                <h3>{{data.year}}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
