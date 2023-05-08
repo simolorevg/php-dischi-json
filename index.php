@@ -26,9 +26,11 @@
                 <div class="row row-cols-3">
                     <div class="col g-3" v-for="(data,index) in disks" :key="index">
                         <div class="my-card">
-                            <div class="img-content">
-                                <img :src='data.poster' class="card-img-top" alt="">
-                            </div>
+                            <a @click='isClicked(index)'>
+                                <div class="img-content">
+                                    <img :src='data.poster' class="card-img-top" alt="">
+                                </div>
+                            </a>
                             <div class="d-flex flex-column justify-content-center align-items-center">
                                 <h2>{{data.title}}</h2>
                                 <p>{{data.author}}</p>
