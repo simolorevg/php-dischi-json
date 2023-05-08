@@ -11,12 +11,21 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!--AXIOS LINK-->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="css/style.css">
     <title>Dischi</title>
 </head>
 
 <body>
     <div id='app'>
-        <h1>From Disco to Disco</h1>
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <div class="my-header">
+                <h1>From Disco to Disco</h1>
+            </div>
+            <div>
+
+            </div>
+        </div>
     </div>
     <script src="js/script.js"></script>
 </body>
