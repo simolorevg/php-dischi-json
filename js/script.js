@@ -8,7 +8,7 @@ createApp({
     mounted() {
         console.log(this.disks);
         axios.get('http://localhost/Boolean-Esercizi/php-dischi-json/server.php').then((resp) => {
-            console.log(resp);
+            this.disks = resp.data.results;
         })
     },
 }).mount('#app');
